@@ -12,8 +12,9 @@ target 'Singapore PSI' do
   pod 'Alamofire'
   pod 'KeychainAccess'
   pod 'ARSLineProgress'
-
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  
 end
 
 def testing_pods
