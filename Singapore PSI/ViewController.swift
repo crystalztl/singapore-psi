@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        PSIService.instance.getPSI(dateTime: Date()) { (psiResponse) in
+        }
+    }
 
 }
 

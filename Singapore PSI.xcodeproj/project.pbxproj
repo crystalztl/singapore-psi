@@ -23,6 +23,11 @@
 		7788D2212015F2FD00F795AA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2182015F2FD00F795AA /* UIViewController.swift */; };
 		7788D2222015F2FD00F795AA /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2192015F2FD00F795AA /* UIWindow.swift */; };
 		7788D2232015F2FD00F795AA /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D21A2015F2FD00F795AA /* Bundle.swift */; };
+		7788D2262018836000F795AA /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2252018836000F795AA /* ApiUtils.swift */; };
+		7788D2282018854200F795AA /* PSIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2272018854200F795AA /* PSIService.swift */; };
+		7788D22A201887BC00F795AA /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D229201887BC00F795AA /* Region.swift */; };
+		7788D22C2018885F00F795AA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D22B2018885F00F795AA /* Location.swift */; };
+		7788D22E2018893200F795AA /* PSIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D22D2018893200F795AA /* PSIResponse.swift */; };
 		77F0D5852015F1C100F3B40C /* SingaporePSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F0D5842015F1C100F3B40C /* SingaporePSITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,11 @@
 		7788D2182015F2FD00F795AA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7788D2192015F2FD00F795AA /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		7788D21A2015F2FD00F795AA /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		7788D2252018836000F795AA /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
+		7788D2272018854200F795AA /* PSIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIService.swift; sourceTree = "<group>"; };
+		7788D229201887BC00F795AA /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		7788D22B2018885F00F795AA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7788D22D2018893200F795AA /* PSIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIResponse.swift; sourceTree = "<group>"; };
 		77F0D5822015F1C100F3B40C /* SingaporePSITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingaporePSITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F0D5842015F1C100F3B40C /* SingaporePSITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporePSITests.swift; sourceTree = "<group>"; };
 		77F0D5862015F1C100F3B40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				7788D2112015F2FD00F795AA /* Extension */,
+				7788D2242018836000F795AA /* API */,
 				7745E7352015EE5D00F407DA /* AppDelegate.swift */,
 				7745E7372015EE5D00F407DA /* ViewController.swift */,
 				7745E7392015EE5D00F407DA /* Main.storyboard */,
@@ -141,6 +152,18 @@
 				7788D21A2015F2FD00F795AA /* Bundle.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7788D2242018836000F795AA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7788D2252018836000F795AA /* ApiUtils.swift */,
+				7788D2272018854200F795AA /* PSIService.swift */,
+				7788D229201887BC00F795AA /* Region.swift */,
+				7788D22B2018885F00F795AA /* Location.swift */,
+				7788D22D2018893200F795AA /* PSIResponse.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		77F0D5832015F1C100F3B40C /* SingaporePSITests */ = {
@@ -335,9 +358,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Singapore PSI/Pods-Singapore PSI-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -387,15 +414,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7788D2262018836000F795AA /* ApiUtils.swift in Sources */,
 				7745E7382015EE5D00F407DA /* ViewController.swift in Sources */,
 				7788D2202015F2FD00F795AA /* UIImage.swift in Sources */,
 				7788D2212015F2FD00F795AA /* UIViewController.swift in Sources */,
 				7788D21E2015F2FD00F795AA /* FundamentalTypes.swift in Sources */,
 				7788D21B2015F2FD00F795AA /* UIView.swift in Sources */,
 				7745E7362015EE5D00F407DA /* AppDelegate.swift in Sources */,
+				7788D22E2018893200F795AA /* PSIResponse.swift in Sources */,
+				7788D22C2018885F00F795AA /* Location.swift in Sources */,
 				7788D21F2015F2FD00F795AA /* String.swift in Sources */,
 				7788D2222015F2FD00F795AA /* UIWindow.swift in Sources */,
 				7788D2232015F2FD00F795AA /* Bundle.swift in Sources */,
+				7788D2282018854200F795AA /* PSIService.swift in Sources */,
+				7788D22A201887BC00F795AA /* Region.swift in Sources */,
 				7788D21C2015F2FD00F795AA /* Data.swift in Sources */,
 				7788D21D2015F2FD00F795AA /* UIColor.swift in Sources */,
 			);
