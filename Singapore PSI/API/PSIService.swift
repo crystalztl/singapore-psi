@@ -21,7 +21,7 @@ public class PSIService {
         let dateTimeString = dateTime.format(dateFormat, humanFriendly: false)
         var request = URLRequest(url: URL(string: ApiUtils.baseUrl+"?\(ApiUtils.dateTimeKeyName)=\(dateTimeString)")!)
         request.httpMethod = HTTPMethod.get.rawValue
-        request.setValue(ApiUtils.apiKey, forHTTPHeaderField: ApiUtils.apiKeyName)
+        request.setValue(ApiUtils.psiApiKey, forHTTPHeaderField: ApiUtils.apiKeyName)
         
         Alamofire.request(request)
             .validate()
@@ -40,6 +40,25 @@ public class PSIService {
                 completion(response)
                 
         }
+    }
+    
+    public func fillPsiIndexInRegions(psiResponse: PSIResponse) -> [Region]? {
+        
+        guard let regions = psiResponse.region_metadata  else {
+            return nil
+        }
+        
+        guard let items = psiResponse.items else {
+            return nil
+        }
+        
+        regions.filter{$0.name == "central"}[0].psiIndex = items[0].readings?.psi_twenty_four_hourly?.central
+        regions.filter{$0.name == "west"}[0].psiIndex = items[0].readings?.psi_twenty_four_hourly?.west
+        regions.filter{$0.name == "east"}[0].psiIndex = items[0].readings?.psi_twenty_four_hourly?.east
+        regions.filter{$0.name == "north"}[0].psiIndex = items[0].readings?.psi_twenty_four_hourly?.north
+        regions.filter{$0.name == "south"}[0].psiIndex = items[0].readings?.psi_twenty_four_hourly?.south
+        
+        return regions
     }
     
 }

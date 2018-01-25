@@ -13,4 +13,5 @@ public class Region: HandyJSON {
     public required init() {}
     public var name : String?
     public var label_location: Location?
+    public var psiIndex: Double?
 }

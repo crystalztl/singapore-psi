@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		3C24F9F3B2DA0CF0A866EDDE /* Pods_SingaporePSITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19CBC0669804DCD5F8599A1 /* Pods_SingaporePSITests.framework */; };
 		476D58A2E634A33E50613657 /* Pods_Singapore_PSI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232819ADEABA9AE2BC2AD324 /* Pods_Singapore_PSI.framework */; };
+		7740AE0B2018C8EA00211722 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740AE0A2018C8EA00211722 /* MapViewController.swift */; };
 		7745E7362015EE5D00F407DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745E7352015EE5D00F407DA /* AppDelegate.swift */; };
-		7745E7382015EE5D00F407DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745E7372015EE5D00F407DA /* ViewController.swift */; };
 		7745E73B2015EE5D00F407DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7745E7392015EE5D00F407DA /* Main.storyboard */; };
 		7745E73D2015EE5D00F407DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7745E73C2015EE5D00F407DA /* Assets.xcassets */; };
 		7745E7402015EE5D00F407DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7745E73E2015EE5D00F407DA /* LaunchScreen.storyboard */; };
@@ -45,9 +45,9 @@
 		232819ADEABA9AE2BC2AD324 /* Pods_Singapore_PSI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_PSI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BFB08642A94B23099D5637 /* Pods-Singapore PSI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore PSI.release.xcconfig"; path = "Pods/Target Support Files/Pods-Singapore PSI/Pods-Singapore PSI.release.xcconfig"; sourceTree = "<group>"; };
 		72B4B203CCF645E4AA974104 /* Pods-SingaporePSITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePSITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePSITests/Pods-SingaporePSITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7740AE0A2018C8EA00211722 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7745E7322015EE5D00F407DA /* Singapore PSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singapore PSI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7745E7352015EE5D00F407DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7745E7372015EE5D00F407DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7745E73A2015EE5D00F407DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7745E73C2015EE5D00F407DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7745E73F2015EE5D00F407DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				7788D2112015F2FD00F795AA /* Extension */,
 				7788D2242018836000F795AA /* API */,
 				7745E7352015EE5D00F407DA /* AppDelegate.swift */,
-				7745E7372015EE5D00F407DA /* ViewController.swift */,
+				7740AE0A2018C8EA00211722 /* MapViewController.swift */,
 				7745E7392015EE5D00F407DA /* Main.storyboard */,
 				7745E73C2015EE5D00F407DA /* Assets.xcassets */,
 				7745E73E2015EE5D00F407DA /* LaunchScreen.storyboard */,
@@ -415,7 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7788D2262018836000F795AA /* ApiUtils.swift in Sources */,
-				7745E7382015EE5D00F407DA /* ViewController.swift in Sources */,
 				7788D2202015F2FD00F795AA /* UIImage.swift in Sources */,
 				7788D2212015F2FD00F795AA /* UIViewController.swift in Sources */,
 				7788D21E2015F2FD00F795AA /* FundamentalTypes.swift in Sources */,
@@ -430,6 +429,7 @@
 				7788D22A201887BC00F795AA /* Region.swift in Sources */,
 				7788D21C2015F2FD00F795AA /* Data.swift in Sources */,
 				7788D21D2015F2FD00F795AA /* UIColor.swift in Sources */,
+				7740AE0B2018C8EA00211722 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
