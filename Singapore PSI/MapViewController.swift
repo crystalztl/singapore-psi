@@ -44,7 +44,7 @@ class MapViewController: UIViewController {
         bringViewToMostFront(view: refreshButton)
         bringViewToMostFront(view: timestampLabel)
         
-        refreshDataAndMarker()
+        refreshData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,7 +52,7 @@ class MapViewController: UIViewController {
         hideProgress()
     }
     
-    func refreshDataAndMarker(){
+    func refreshData(){
         showProgress();
         psiService.getPSI(dateTime: Date()) { [weak self] (response) in
             DispatchQueue.main.async {
@@ -139,7 +139,7 @@ extension MapViewController: UIGestureRecognizerDelegate {
         guard let point = touch?.location(in: refreshButton) else { return }
         print("Hiting: \(point.debugDescription)")
         if point.x > 0 && point.y > 0 {
-            refreshDataAndMarker()
+            refreshData()
         }
     }
 }
