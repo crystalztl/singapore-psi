@@ -14,6 +14,8 @@
 		7745E73B2015EE5D00F407DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7745E7392015EE5D00F407DA /* Main.storyboard */; };
 		7745E73D2015EE5D00F407DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7745E73C2015EE5D00F407DA /* Assets.xcassets */; };
 		7745E7402015EE5D00F407DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7745E73E2015EE5D00F407DA /* LaunchScreen.storyboard */; };
+		7754583A201B770900CB65F2 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77545839201B770900CB65F2 /* MapViewControllerTests.swift */; };
+		7754583C201B839700CB65F2 /* TestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754583B201B839700CB65F2 /* TestUtil.swift */; };
 		7788D21B2015F2FD00F795AA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2122015F2FD00F795AA /* UIView.swift */; };
 		7788D21C2015F2FD00F795AA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2132015F2FD00F795AA /* Data.swift */; };
 		7788D21D2015F2FD00F795AA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2142015F2FD00F795AA /* UIColor.swift */; };
@@ -28,7 +30,8 @@
 		7788D22A201887BC00F795AA /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D229201887BC00F795AA /* Region.swift */; };
 		7788D22C2018885F00F795AA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D22B2018885F00F795AA /* Location.swift */; };
 		7788D22E2018893200F795AA /* PSIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D22D2018893200F795AA /* PSIResponse.swift */; };
-		77F0D5852015F1C100F3B40C /* SingaporePSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F0D5842015F1C100F3B40C /* SingaporePSITests.swift */; };
+		77D9FF20201B3A64009BFA53 /* PSIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9FF1F201B3A64009BFA53 /* PSIServiceSpec.swift */; };
+		77F0D5852015F1C100F3B40C /* PSIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F0D5842015F1C100F3B40C /* PSIServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,8 @@
 		7745E73C2015EE5D00F407DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7745E73F2015EE5D00F407DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7745E7412015EE5D00F407DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77545839201B770900CB65F2 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		7754583B201B839700CB65F2 /* TestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtil.swift; sourceTree = "<group>"; };
 		7788D2122015F2FD00F795AA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7788D2132015F2FD00F795AA /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		7788D2142015F2FD00F795AA /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -66,8 +71,9 @@
 		7788D229201887BC00F795AA /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		7788D22B2018885F00F795AA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		7788D22D2018893200F795AA /* PSIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIResponse.swift; sourceTree = "<group>"; };
+		77D9FF1F201B3A64009BFA53 /* PSIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIServiceSpec.swift; sourceTree = "<group>"; };
 		77F0D5822015F1C100F3B40C /* SingaporePSITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingaporePSITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77F0D5842015F1C100F3B40C /* SingaporePSITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporePSITests.swift; sourceTree = "<group>"; };
+		77F0D5842015F1C100F3B40C /* PSIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIServiceTests.swift; sourceTree = "<group>"; };
 		77F0D5862015F1C100F3B40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F56CED5B384B2573629421A /* Pods-SingaporePSITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePSITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePSITests/Pods-SingaporePSITests.release.xcconfig"; sourceTree = "<group>"; };
 		C19CBC0669804DCD5F8599A1 /* Pods_SingaporePSITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePSITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,8 +175,11 @@
 		77F0D5832015F1C100F3B40C /* SingaporePSITests */ = {
 			isa = PBXGroup;
 			children = (
-				77F0D5842015F1C100F3B40C /* SingaporePSITests.swift */,
+				77F0D5842015F1C100F3B40C /* PSIServiceTests.swift */,
+				77545839201B770900CB65F2 /* MapViewControllerTests.swift */,
+				7754583B201B839700CB65F2 /* TestUtil.swift */,
 				77F0D5862015F1C100F3B40C /* Info.plist */,
+				77D9FF1F201B3A64009BFA53 /* PSIServiceSpec.swift */,
 			);
 			path = SingaporePSITests;
 			sourceTree = "<group>";
@@ -359,7 +368,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,7 +441,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F0D5852015F1C100F3B40C /* SingaporePSITests.swift in Sources */,
+				77F0D5852015F1C100F3B40C /* PSIServiceTests.swift in Sources */,
+				7754583C201B839700CB65F2 /* TestUtil.swift in Sources */,
+				7754583A201B770900CB65F2 /* MapViewControllerTests.swift in Sources */,
+				77D9FF20201B3A64009BFA53 /* PSIServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +569,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -579,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2K8NS7DJ77;
 				INFOPLIST_FILE = "Singapore PSI/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -596,7 +610,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2K8NS7DJ77;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "Singapore PSI/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -613,6 +629,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2K8NS7DJ77;
 				INFOPLIST_FILE = SingaporePSITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -630,7 +647,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2K8NS7DJ77;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SingaporePSITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianli.SingaporePSITests;

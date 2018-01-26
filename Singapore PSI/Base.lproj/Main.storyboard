@@ -28,7 +28,7 @@
         <!--Item 1-->
         <scene sceneID="zWJ-Mi-tFe">
             <objects>
-                <viewController id="1dG-el-AUT" customClass="MapViewController" customModule="Singapore_PSI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="1dG-el-AUT" customClass="MapViewController" customModule="Singapore_PSI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2a-mD-q0p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

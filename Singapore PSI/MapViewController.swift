@@ -19,19 +19,15 @@ class MapViewController: UIViewController {
     
     var regions: [Region]? = nil {
         didSet{
-            DispatchQueue.main.async {
-                if let new = self.regions {
-                    self.drawMaker(with: new)
-                }
+            if let new = self.regions {
+                self.drawMaker(with: new)
             }
         }
     }
     
     var timestamp: String? = nil {
         didSet{
-            DispatchQueue.main.async {
-                self.timestampLabel.text = "Updated on: " + (self.timestamp ?? " ")
-            }
+            self.timestampLabel.text = "Updated on: " + (self.timestamp ?? " ")
         }
     }
     

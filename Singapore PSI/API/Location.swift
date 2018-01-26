@@ -13,4 +13,8 @@ public class Location: HandyJSON {
     public required init() {}
     public var longitude : Double?
     public var latitude: Double?
+    
+    public static func ==(lhs: Location, rhs: Location) -> Bool {
+        return (lhs.longitude == rhs.longitude) && (lhs.latitude == rhs.latitude)
+    }
 }
