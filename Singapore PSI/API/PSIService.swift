@@ -26,12 +26,7 @@ public class PSIService {
         Alamofire.request(request)
             .validate()
             .response { (response) -> Void in
-                guard response.error == nil else {
-                    completion(nil)
-                    return
-                }
-                
-                guard let usableData = response.data  else{
+                guard response.error == nil, let usableData = response.data else {
                     completion(nil)
                     return
                 }
@@ -44,11 +39,7 @@ public class PSIService {
     
     public func fillPsiIndexInRegions(psiResponse: PSIResponse) -> [Region]? {
         
-        guard let regions = psiResponse.region_metadata  else {
-            return nil
-        }
-        
-        guard let items = psiResponse.items else {
+        guard let regions = psiResponse.region_metadata, let items = psiResponse.items else {
             return nil
         }
         
@@ -59,6 +50,15 @@ public class PSIService {
         regions.filter{$0.name == "south"}[0].psiIndex = items[0].readings?.psi_twenty_four_hourly?.south
         
         return regions
+    }
+    
+    public func getTimestamp(psiResponse: PSIResponse) -> String? {
+        guard let items = psiResponse.items,
+            items.count > 0,
+            let timestamp = items[0].timestamp else {
+                return nil
+        }
+        return timestamp
     }
     
 }
