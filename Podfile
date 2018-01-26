@@ -8,12 +8,9 @@ target 'Singapore PSI' do
   # Pods for Singapore PSI
 
   pod 'HandyJSON','4.0.0-beta.1'
-  pod 'IQKeyboardManagerSwift'
   pod 'Alamofire'
-  pod 'KeychainAccess'
   pod 'ARSLineProgress'
   pod 'GoogleMaps'
-  pod 'GooglePlaces'
   
 end
 

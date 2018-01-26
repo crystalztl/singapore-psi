@@ -6,11 +6,7 @@ PODS:
   - GoogleMaps/Base (2.5.0)
   - GoogleMaps/Maps (2.5.0):
     - GoogleMaps/Base
-  - GooglePlaces (2.5.0):
-    - GoogleMaps/Base (= 2.5.0)
   - HandyJSON (4.0.0-beta.1)
-  - IQKeyboardManagerSwift (5.0.7)
-  - KeychainAccess (3.1.0)
   - Nimble (7.0.3)
   - Quick (1.2.0)
 
@@ -18,10 +14,7 @@ DEPENDENCIES:
   - Alamofire
   - ARSLineProgress
   - GoogleMaps
-  - GooglePlaces
   - HandyJSON (= 4.0.0-beta.1)
-  - IQKeyboardManagerSwift
-  - KeychainAccess
   - Nimble
   - Quick
 
@@ -29,13 +22,10 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   ARSLineProgress: 688f3fe810515200186cebee349e06f822575fe6
   GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
-  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
-  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
-  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 342729eb7743c48d0eb04ab70572f9e242d82e5b
+PODFILE CHECKSUM: 0f4a6e13176a70fbbb78370208ae1ab5f3711125
 
 COCOAPODS: 1.3.1
