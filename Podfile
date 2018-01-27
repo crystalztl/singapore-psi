@@ -21,7 +21,11 @@ end
 
 target 'SingaporePSITests' do
     use_frameworks!
+    inherit! :search_paths
+
     testing_pods
+    pod 'HandyJSON','4.0.0-beta.1'
+
 end
 
 post_install do |installer|

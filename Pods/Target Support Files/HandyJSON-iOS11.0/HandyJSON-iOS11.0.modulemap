@@ -1,5 +1,5 @@
 framework module HandyJSON {
-  umbrella header "HandyJSON-umbrella.h"
+  umbrella header "HandyJSON-iOS11.0-umbrella.h"
 
   export *
   module * { export * }
