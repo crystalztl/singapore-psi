@@ -27,7 +27,12 @@ class MapViewController: UIViewController {
     
     var timestamp: String? = nil {
         didSet{
-            self.timestampLabel.text = "Updated on: " + (self.timestamp ?? " ")
+            var timeString = self.timestamp
+            if timeString != nil {
+                let range = timeString!.index(timeString!.endIndex, offsetBy: -6)..<timeString!.endIndex
+                timeString!.removeSubrange(range)
+            }
+            self.timestampLabel.text = "Updated on: " + (timeString ?? " ")
         }
     }
     

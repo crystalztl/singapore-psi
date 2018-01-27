@@ -16,6 +16,7 @@
 		7745E7402015EE5D00F407DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7745E73E2015EE5D00F407DA /* LaunchScreen.storyboard */; };
 		7754583A201B770900CB65F2 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77545839201B770900CB65F2 /* MapViewControllerTests.swift */; };
 		7754583C201B839700CB65F2 /* TestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754583B201B839700CB65F2 /* TestUtil.swift */; };
+		77545863201CB65600CB65F2 /* MapViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77545862201CB65600CB65F2 /* MapViewControllerSpec.swift */; };
 		7788D21B2015F2FD00F795AA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2122015F2FD00F795AA /* UIView.swift */; };
 		7788D21C2015F2FD00F795AA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2132015F2FD00F795AA /* Data.swift */; };
 		7788D21D2015F2FD00F795AA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D2142015F2FD00F795AA /* UIColor.swift */; };
@@ -58,6 +59,7 @@
 		7745E7412015EE5D00F407DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77545839201B770900CB65F2 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
 		7754583B201B839700CB65F2 /* TestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtil.swift; sourceTree = "<group>"; };
+		77545862201CB65600CB65F2 /* MapViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerSpec.swift; sourceTree = "<group>"; };
 		7788D2122015F2FD00F795AA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7788D2132015F2FD00F795AA /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		7788D2142015F2FD00F795AA /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -167,10 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				77F0D5842015F1C100F3B40C /* PSIServiceTests.swift */,
+				77D9FF1F201B3A64009BFA53 /* PSIServiceSpec.swift */,
 				77545839201B770900CB65F2 /* MapViewControllerTests.swift */,
+				77545862201CB65600CB65F2 /* MapViewControllerSpec.swift */,
 				7754583B201B839700CB65F2 /* TestUtil.swift */,
 				77F0D5862015F1C100F3B40C /* Info.plist */,
-				77D9FF1F201B3A64009BFA53 /* PSIServiceSpec.swift */,
 			);
 			path = SingaporePSITests;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F0D5852015F1C100F3B40C /* PSIServiceTests.swift in Sources */,
+				77545863201CB65600CB65F2 /* MapViewControllerSpec.swift in Sources */,
 				7754583C201B839700CB65F2 /* TestUtil.swift in Sources */,
 				7754583A201B770900CB65F2 /* MapViewControllerTests.swift in Sources */,
 				77D9FF20201B3A64009BFA53 /* PSIServiceSpec.swift in Sources */,

@@ -41,6 +41,20 @@ class MapViewControllerTests: XCTestCase {
     
     func testShouldShowTimestampCorrectly()  {
         self.viewController.timestamp = "2018-01-26T21:00:00+08:00"
-        XCTAssertEqual(viewController.timestampLabel.text, "Updated on: 2018-01-26T21:00:00+08:00")
+        XCTAssertEqual(viewController.timestampLabel.text, "Updated on: 2018-01-26T21:00:00")
     }
+    
+    func testPerformanceWhenRefresh() {
+        measure {
+            self.viewController.refreshData()
+        }
+    }
+    
+    func testPerformanceWhenLoading() {
+        measure {
+            self.viewController.viewDidLoad()
+        }
+    }
+
+    
 }
